@@ -1,6 +1,4 @@
 :root {
-  --font-family: 'Roboto', sans-serif;
-  --font-size-base: 16px;
   --bg: #0b1529;
   --bgSoft: #1f3050;
   --text: #dee4eb;
@@ -17,13 +15,14 @@ body {
   color: var(--text);
 }
 
-body.light {
+body.light{
   --bg: #dee4eb;
   --text: #0b1529;
 }
 
 a {
-  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {
@@ -167,7 +166,7 @@ a {
   font-size: 14px;
 }
 
-.pagination {
+.pagination{
   display: flex;
   gap: 10px;
   list-style: none;
@@ -178,7 +177,7 @@ a {
   margin-bottom: 30px;
 }
 
-.page-item {
+.page-item{
   border: 1px solid gray;
   width: 30px;
   height: 30px;
@@ -188,49 +187,16 @@ a {
   border-radius: 5px;
 }
 
-.page-item.active {
+.page-item.active{
   background-color: var(--text);
   color: var(--bg);
 }
-
-.page-item.disabled {
+.page-item.disabled{
   background-color: #313845;
   cursor: not-allowed;
 }
 
 /* LIST END */
-
-/* TABLE STYLING */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  font-family: var(--font-family);
-  margin-top: 40px;
-}
-
-thead {
-  background-color: var(--bgSoft);
-  color: var(--text);
-}
-
-th, td {
-  padding: 12px;
-  border: 1px solid #ddd;
-}
-
-th {
-  font-weight: bold;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-  background-color: #f1f1f1;
-}
 
 /* SINGLE START */
 
@@ -391,7 +357,7 @@ tbody tr:hover {
     display: none;
   }
 
-  .searchButton span {
+  .searchButton span{
     display: none;
   }
 }
