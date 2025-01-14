@@ -33,48 +33,44 @@
       <div id="pagination"></div>
 
       <div class="listContainer">
-        <div class="list">
-          {{ range .Pages }}
-            <div class="listItem">
-              <div class="listImageContainer">
-                <img loading="lazy" class="listImage" src="{{ .Params.image }}" alt="{{ .Title }}" />
-              </div>
-              <div class="listItemTexts">
-                <h1 class="lisItemTitle">
-                  <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h1>
-                <p class="lisItemDesc">{{ .Summary }}</p>
-                <div class="listItemDetail">
-                  <img class="listAvatar" src="{{ .Params.avatar }}" alt="" loading="lazy" />
-                  <span class="author">{{ .Params.author }}</span>
-                  <time class="date">{{ .Date.Format "Jan 02, 2006" }}</time>
-                </div>
-                <div class="tags">
-                  {{ range .Params.tags }}
-                    <div class="tag">
-                      <a href="{{ .Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
-                    </div>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          {{ end }}
 
-          <ul class="pagination pagination-default">
-            {{ if .Pagination.HasPrev }}
-              <li class="page-item">
-                <a href="{{ .Pagination.Prev.URL }}" class="page-link" role="button" tabindex="-1">&laquo;</a>
-              </li>
-            {{ end }}
-            <li class="page-item active">
-              <a href="#" class="page-link" role="button">{{ .Pagination.PageNumber }}</a>
-            </li>
-            {{ if .Pagination.HasNext }}
-              <li class="page-item">
-                <a href="{{ .Pagination.Next.URL }}" class="page-link" role="button">&raquo;</a>
-              </li>
-            {{ end }}
-          </ul>
+        <div class="list">
+  {{ range .Paginator.Pages }}
+  <div class="listItem">
+    <img
+      src={{
+      .Params.image
+      }}
+      alt="{{.Title}}"
+      class="listItemImage"
+      loading="lazy"
+    />
+    <div class="listItemTexts">
+      <h1 class="listItemTitle">
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </h1>
+      <p class="listItemDesc">{{.Params.description}}</p>
+      <div class="listItemDetail">
+        <img src="{{.Params.avatar}}" loading="lazy" alt="" class="listItemAvatar"/>
+        <span>{{ range (.GetTerms "authors")}}
+          <a href={{.Permalink}}>{{ .Name }}</a>
+          {{end}}</span>
+        <time>{{ dateFormat .Site.Params.dateFormat  .Date}}</time>
+      </div>
+      <div class="listItemCategories">
+        {{ range (.GetTerms "categories") }}
+        <a class="listItemCategory" href={{ .Permalink }}>{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }} {{ template "_internal/pagination.html" . }}
+</div>
+
+        
+
+
+
         </div>
         <div class="sideBar"></div>
       </div>
