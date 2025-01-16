@@ -1,28 +1,59 @@
 {{ define "main" }}
-<div class="single">
+
   <div class="singleHead">
-    <div class="singleHeadTexts">
-      <h1 class="singleHeadTitle">{{.Title}}</h1>
-      <p class="singleHeadDesc">{{.Params.description}}</p>
-      <div class="singleHeadDetail">
-        <img src={{.Params.avatar}} loading="lazy" alt="" class="singleAvatar">
-        <span>{{ range (.GetTerms "authors")}}
-          <a href={{.Permalink}}>{{ .Name }}</a>
+     <div class="singleHeadContainer">
+    <div class="singleHeadText">
+      <h1 class="singleTitle">{{.Title}}</h1>
+      <p class="singleDescription">{{.Params.description}}</p>
+      <div class="details">
+        <img src={{.Params.avatar}} loading="lazy" alt="" class="avatar">
+      
+        <div class="detailText">
+   
+                  <span>{{ range (.GetTerms "authors")}}
+          <a class="author" href={{.Permalink}}>{{ .Name }}</a>
           {{end}}
         </span>
-        {{ range (.GetTerms "categories")}}
-        <a href={{.Permalink}} class="singleCategory">{{ .Name }}</a>
-        {{end}}
-      </div>
-      <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
-    </div>
-    <img src={{ .Params.imageBig }} alt={{.Title}} class="singleHeadImg">
+          
+          <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+        </div>
+        
+        <span>{{ range (.GetTerms "authors")}}
+          <a class="author" href={{.Permalink}}>{{ .Name }}</a>
+          {{end}}
+        </span>
+        <div class="tags">
+{{ range (.GetTerms "categories") }}
+  <div class="tag {{ .Name }}">
+    <a href="{{ .Permalink }}" class="singleCategory">{{ .Name }}</a>
   </div>
+{{ end }}
+
+        </div>
+        
+        
+        
+       
+      </div>
+
+      
+    </div>
+
+           <div class="singleImageContainer">
+
+             <img src={{ .Params.imageBig }} alt={{.Title}} class="singleImage">
+    </div>
+
+       
+    
+  </div>
+
+    /* non */
   <div class="singleBottom">
     <div class="singleContent">{{ .Content }}</div>
     <div class="singleRightBar">
       {{ partial "rightBar" .}}
     </div>
   </div>
-</div>
+  </div>
 {{ end }}
