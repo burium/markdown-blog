@@ -10,9 +10,9 @@
 
                 <div class="detailText">
                     <span>
-                        {{ range (.GetTerms "authors")}}
+                        {{ range (.GetTerms "authors") }}
                         <a class="author" href="{{.Permalink}}">{{ .Name }}</a>
-                        {{end}}
+                        {{ end }}
                     </span>
 
                     <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
@@ -31,17 +31,20 @@
             <img src="{{ .Params.imageBig }}" alt="{{.Title}}" class="singleImage" />
         </div>
     </div>
-
-    /* non */
-    <div class="contentContainer">
-        <div class="contentSide"></div>
-        <div class="content">
-            {{ .Content }}
-        </div>
-
-        <div class="right">
-            {{ partial "rightBar" .}}
-        </div>
-    </div>
-    {{ end }}
 </div>
+
+{{/* non */}}
+
+<div class="contentContainer">
+    <div class="contentSide"></div>
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    <div class="right">
+        {{ partial "rightBar" . }}
+    </div>
+</div>
+
+{{ end }}
+
