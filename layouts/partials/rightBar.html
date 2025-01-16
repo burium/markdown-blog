@@ -1,4 +1,59 @@
-<div class="rightBar">
-  <img src="/images/ads.webp" alt="ad" class="rightBarImg">
-  <img src="/images/adh.webp" alt="ad" class="rightBarImgHr">
+<div class="right">
+    <div class="contentRightBar">
+        <a href="http://hostinger.com/lamadev" target="_blank">
+            <img class="contentRightBarImageSquare" src="/images/hs.png" alt="" loading="lazy" />
+            <img class="contentRightBarImageHorizontal" src="/images/hh.png" alt="" loading="lazy" />
+        </a>
+    </div>
+
+    <div class="contentSideRight">
+        <div class="share">
+            <span class="shareTitle">Share this article</span>
+            <div class="shareIcons">
+                <!-- Facebook Share Button -->
+                <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}&t={{ .Title }}" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30.000001" preserveAspectRatio="xMidYMid meet">
+                        <!-- Facebook Icon SVG Path -->
+                    </svg>
+                </a>
+
+                <!-- Twitter Share Button -->
+                <a href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30.000001" preserveAspectRatio="xMidYMid meet">
+                        <!-- Twitter Icon SVG Path -->
+                    </svg>
+                </a>
+
+                <!-- LinkedIn Share Button -->
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ .Summary }}" target="_blank">
+                    <svg width="20px" height="20px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                        <!-- LinkedIn Icon SVG Path -->
+                    </svg>
+                </a>
+
+                <!-- WhatsApp Share Button -->
+                <a href="whatsapp://send?text={{ .Title }} - {{ .Permalink }}" target="_blank">
+                    <svg width="20px" height="20px" viewBox="-1.5 0 259 259" xmlns="http://www.w3.org/2000/svg">
+                        <!-- WhatsApp Icon SVG Path -->
+                    </svg>
+                </a>
+
+                <!-- Copy Link Button -->
+                <button class="copyLink" onclick="copyLink()">Copy Link</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    function copyLink() {
+        // Create a temporary input element to hold the URL
+        var tempInput = document.createElement("input");
+        tempInput.value = window.location.href; // Get current page URL
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+        alert("Link copied to clipboard!");
+    }
+</script>
