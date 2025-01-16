@@ -1,55 +1,40 @@
 {{ define "main" }}
-<div class="single">
-    <div class="singleHead">
-        <div class="singleHeadTexts">
-            <h1 class="singleHeadTitle">{{.Title}}</h1>
-            <p class="singleHeadDesc">{{.Params.description}}</p>
-            <div class="singleHeadDetail">
-                <img src="{{.Params.avatar}}" loading="lazy" alt="" class="singleAvatar" />
-                <span>
-                    {{ range (.GetTerms "authors")}}
-                        <a href="{{.Permalink}}">{{ .Name }}</a>
-                    {{end}}
-                </span>
-                {{ range (.GetTerms "categories")}}
-                    <a href="{{.Permalink}}" class="singleCategory">{{ .Name }}</a>
-                {{end}}
-            </div>
-            <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+      <div id="pagination"></div>
+      
+<div class="singleHead">
+  <div class="singleHeadContainer">
+    <div class="singleHeadText">
+      <h1 class="singleTitle">React 19 is Coming!</h1>
+      <p class="singleDescription">React 19 is on its way. After a long wait, the new version of React is finally arriving. Let&#39;s explore the new features and discuss the deprecated methods.</p>
+      <div class="details">
+        
+        <img class="avatar" src="/images/safak.png" alt="" loading="lazy" />
+        <div class="detailText">
+          <a class="author" href="https://blog.lama.dev/authors/safak-kocaoglu/"> Safak Kocaoglu </a>
+          
+          <time class="singleDate">
+            Feb 25, 2024
+          </time>
         </div>
-        <img src="{{.Params.imageBig}}" alt="{{.Title}}" class="singleHeadImg" />
-    </div>
- <div class="content">
-        {{ .Content }}
-    </div>
-
-    <div class="right">
-        <div class="contentRightBar">
-            <a href="http://hostinger.com/lamadev" target="_blank">
-                <img class="contentRightBarImageSquare" src="/images/hs.png" alt="" loading="lazy" />
-                <img class="contentRightBarImageHorizontal" src="/images/hh.png" alt="" loading="lazy" />
-            </a>
+        <div class="tags">
+          
+          <div class="tag react">
+            <a href="https://blog.lama.dev/tags/react/">react</a>
+          </div>
+          
         </div>
-
-        <div class="contentSideRight">
-            <div class="share">
-                <span class="shareTitle">Share this article</span>
-                <div class="shareIcons">
-                    <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank">
-                        <!-- Facebook SVG code here -->
-                    </a>
-                    <a href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}" target="_blank">
-                        <!-- Twitter SVG code here -->
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ .Description }}" target="_blank">
-                        <!-- LinkedIn SVG code here -->
-                    </a>
-                    <a href="whatsapp://send?text={{ .Title }} {{ .Permalink }}" target="_blank">
-                        <!-- WhatsApp SVG code here -->
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+    <div class="singleImageContainer">
+      <img
+        loading="lazy"
+        class="singleImage"
+        
+        src="/images/REACT19BIG.png"
+        
+        alt="React 19 is Coming!"
+      />
+    </div>
+  </div>
+</div
 {{ end }}
