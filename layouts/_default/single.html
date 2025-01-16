@@ -19,10 +19,36 @@
         </div>
         <img src="{{.Params.imageBig}}" alt="{{.Title}}" class="singleHeadImg" />
     </div>
-    <div class="singleBottom">
-        <div class="singleContent">{{ .Content }}</div>
-        <div class="singleRightBar">
-            {{ partial "rightBar" .}}
+ <div class="content">
+        {{ .Content }}
+    </div>
+
+    <div class="right">
+        <div class="contentRightBar">
+            <a href="http://hostinger.com/lamadev" target="_blank">
+                <img class="contentRightBarImageSquare" src="/images/hs.png" alt="" loading="lazy" />
+                <img class="contentRightBarImageHorizontal" src="/images/hh.png" alt="" loading="lazy" />
+            </a>
+        </div>
+
+        <div class="contentSideRight">
+            <div class="share">
+                <span class="shareTitle">Share this article</span>
+                <div class="shareIcons">
+                    <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank">
+                        <!-- Facebook SVG code here -->
+                    </a>
+                    <a href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}" target="_blank">
+                        <!-- Twitter SVG code here -->
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ .Description }}" target="_blank">
+                        <!-- LinkedIn SVG code here -->
+                    </a>
+                    <a href="whatsapp://send?text={{ .Title }} {{ .Permalink }}" target="_blank">
+                        <!-- WhatsApp SVG code here -->
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
