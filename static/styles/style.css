@@ -906,6 +906,15 @@ body.light .joinText {
   color: #555;
 }
 
+code{
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #333;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 1536px) {
@@ -1074,12 +1083,7 @@ body.light .joinText {
 
   code {
     font-size: 1.6rem;
-    font-family: "Courier New", Courier, monospace;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #333;
+
   }
 }
 
