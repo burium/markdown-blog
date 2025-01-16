@@ -1,6 +1,7 @@
 baseURL = 'https://loquacious-mandazi-92bae5.netlify.app/'
 languageCode = 'en-us'
 title = 'CUDE'
+home = 'CUDE'
 
 paginate = 4
 
