@@ -4,7 +4,7 @@ date = 2025-01-16
 draft = false
 description = "A detailed explanation of German verb conjugation in the present tense, including auxiliary verbs, modal verbs, regular verbs, and irregular verbs."
 image = "/images/konjugation-verben.jpg"
-imageBig = "/images/konjugation-verben-big.jpg"
+imageBig = "[/images/konjugation-verben-big.jpg](https://r72.cooltext.com/rendered/cooltext473991758467426.png)"
 categories = ["German Grammar", "Language Learning"]
 authors = ["Your Name"]
 avatar = "/images/avatar.webp"
@@ -21,7 +21,7 @@ avatar = "/images/avatar.webp"
 
 ### Hilfsverben
 
-![Hilfsverben](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZPbSZAOp7NYmOZse66vhG24qJKnzEHEhIgZxLfL4xZSqAljL68ntOWWvCwBddrGwrNapGDhavv0F1Bk9XnZ_fLddku_8f5Q4b_m0f8qCDaiBzw1wYaeW_Pja9bzFTvs4MpZQEkpQ7zP95/s1600/konjugation+der+verben+im+pr%25C3%25A4sens.PNG)
+![Hilfsverben](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPbSZAOp7NYmOZse66vhG24qJKnzEHEhIgZxLfL4xZSqAljL68ntOWWvCwBddrGwrNapGDhavv0F1Bk9XnZ_fLddku_8f5Q4b_m0f8qCDaiBzw1wYaeW_Pja9bzFTvs4MpZQEkpQ7zP95/s1600/konjugation+der+verben+im+pr%25C3%25A4sens.PNG)
 
 ### Regelmäßige Verben
 
