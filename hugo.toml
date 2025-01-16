@@ -1,11 +1,11 @@
 baseURL = 'https://loquacious-mandazi-92bae5.netlify.app/'
 languageCode = 'en-us'
-title = 'Schritte Blog'
+title = 'CUDE'
 
 paginate = 4
 
 [params]
-  description = "The Schritte fastest blog"
+  description = "The CUDE fastest blog"
   dateFormat = "Jan 2, 2006"
 
 [taxonomies]
