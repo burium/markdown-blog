@@ -1074,7 +1074,12 @@ body.light .joinText {
 
   code {
     font-size: 1.6rem;
-
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #333;
   }
 }
 
@@ -1135,14 +1140,9 @@ body.light .joinText {
   }
 
   code {
-        font-family: "Courier New", Courier, monospace;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #333;
-  }
+    font-size: 1rem;
 
+  }
 
 
   
