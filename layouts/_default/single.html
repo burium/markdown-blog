@@ -1,28 +1,52 @@
 {{ define "main" }}
-<div class="single">
-  <div class="singleHead">
-    <div class="singleHeadTexts">
-      <h1 class="singleHeadTitle">{{.Title}}</h1>
-      <p class="singleHeadDesc">{{.Params.description}}</p>
-      <div class="singleHeadDetail">
-        <img src={{.Params.avatar}} loading="lazy" alt="" class="singleAvatar">
-        <span>{{ range (.GetTerms "authors")}}
-          <a href={{.Permalink}}>{{ .Name }}</a>
-          {{end}}
-        </span>
-        {{ range (.GetTerms "categories")}}
-        <a href={{.Permalink}} class="singleCategory">{{ .Name }}</a>
-        {{end}}
+<div class="singleHead">
+  <div class="singleHeadContainer">
+    <div class="singleHeadText">
+      <h1 class="singleTitle">{{ .Title }}</h1>
+      <p class="singleDescription">{{ .Params.description }}</p>
+      <div class="details">
+        
+        <!-- Avatar image with lazy loading -->
+        <img class="avatar" src="{{ .Params.avatar }}" alt="" loading="lazy" />
+        
+        <div class="detailText">
+          <!-- Authors List -->
+          {{ range (.GetTerms "authors") }}
+            <a class="author" href="{{ .Permalink }}">{{ .Name }}</a>
+          {{ end }}
+
+          <!-- Date -->
+          <time class="singleDate">
+            {{ .Date | dateFormat .Site.Params.dateFormat }}
+          </time>
+        </div>
+
+        <div class="tags">
+          <!-- Static tag for React -->
+          <div class="tag react">
+            <a href="https://blog.lama.dev/tags/react/">react</a>
+          </div>
+
+          <!-- Dynamic Categories -->
+          {{ range (.GetTerms "categories") }}
+            <div class="tag {{ .Name | urlize }}">
+              <a href="{{ .Permalink }}">{{ .Name }}</a>
+            </div>
+          {{ end }}
+        </div>
       </div>
-      <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
     </div>
-    <img src={{ .Params.imageBig }} alt={{.Title}} class="singleHeadImg">
-  </div>
-  <div class="singleBottom">
-    <div class="singleContent">{{ .Content }}</div>
-    <div class="singleRightBar">
-      {{ partial "rightBar" .}}
+
+    <!-- Big Image -->
+    <div class="singleImageContainer">
+      <img
+        loading="lazy"
+        class="singleImage"
+        src="{{ .Params.imageBig }}"
+        alt="{{ .Title }}"
+      />
     </div>
   </div>
 </div>
+
 {{ end }}
