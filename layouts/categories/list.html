@@ -1,9 +1,19 @@
 {{ define "main" }} 
 {{ if eq .RelPermalink "/categories/"}} 
 {{ range $.Site.Taxonomies.categories.ByCount }}
-  <a href="/categories/{{ .Name }}">
-    # {{ .Name }} <small>({{.Count}})</small>
+
+
+  <div class="tagsPage">
+   
+  <a class="tagsPageLink" href="/categories/{{ .Name }}">
+    <div class="tagsPageItem react">
+      # {{ .Name }} <small>({{.Count}})</small>
+    </div>
   </a>
+  
+
+
+
 {{end}}
 {{ else }}
 <div class="list">
