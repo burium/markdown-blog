@@ -18,11 +18,12 @@
                     <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
                 </div>
                 <div class="tags">
-                    {{ range (.GetTerms "categories") }}
-                    <div class="tag {{ .Name }}">
-                        <a href="{{ .Permalink }}" class="singleCategory">{{ .Name }}</a>
-                    </div>
-                    {{ end }}
+{{ range (.GetTerms "categories") }}
+  <div class="tag {{ .Name }}">
+    <a href="{{ .Permalink }}" class="singleCategory">{{ .Name }}</a>
+  </div>
+{{ end }}
+
                 </div>
             </div>
         </div>
