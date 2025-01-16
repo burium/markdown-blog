@@ -14,6 +14,45 @@
     {{ partial "navbar" . }}
     {{ block "main" . }} {{ end }}
     {{ partial "footer" . }}
+     </div>
+    <div id="search" class="search">
+  <div class="searchContainer">
+    <div class="searchInputContainer">
+      <input
+        type="text"
+        class="searchInput"
+        id="searchInput"
+        autofocus
+        placeholder="Type to search..."
+      />
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="searchCloseSvg"
+      >
+        <g opacity="0.4">
+          <path
+            d="M9.16992 14.8299L14.8299 9.16992"
+            stroke="#999"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.8299 14.8299L9.16992 9.16992"
+            stroke="#999"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </div>
+    <span class="searchCountNumber"></span>
+    <div class="searchResult"></div>
+  </div>
+</div>
   </div>
   <script src="/js/app.js"></script>  <script src="/js/search.js"></script>
 </body>
