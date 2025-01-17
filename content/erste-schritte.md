@@ -12,7 +12,7 @@ avatar = "/images/avatar.webp"
 
 
 Um zu sehen, ob auf einem Server überhaupt PHP installiert ist, benötigt man eine PHP-Datei (z.B. `phpinfo.php`) mit folgendem Inhalt:
-```php
+```
 <?php
 phpinfo();
 ?>
@@ -27,7 +27,7 @@ Ruft man diese Seite jetzt auf ([http://localhost/phpinfo.php](http://localhost/
 In einer PHP-Datei können sowohl HTML-Befehle als auch PHP-Befehle enthalten sein. Die HTML-Befehle schreibt ihr wie gewohnt in die .php-Datei, so wie ihr es aus HTML-Dateien kennt.
 
 Möchte man in die Datei  PHP-Befehle einbinden, so muss zuerst eine Script-Umgebung gestartet. Dies geht mittels _Danach kommt euer PHP-Code. Diese Script-Umgebung wird beendet mittels _?>.__
-```php
+```
 <!DOCTYPE html>
 <html> 
 <head>
