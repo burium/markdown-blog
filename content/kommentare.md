@@ -11,20 +11,13 @@ avatar = "/images/avatar.webp"
 +++
 Kommentare in PHP werden nicht vom PHP Interpreter ausgeführt, sondern werden stattdessen von diesem übersprungen. Sie dienen euch als Programmierer, um euren Programmcode übersichtlicher zu gestalten. Ihr könnt so, wie der Name sagt, euren Programmcode kommentieren, sprich, erläutern welche Funktionen einzelne Programmabschnitte haben.
 
-Inhaltsverzeichnis \[[Verbergen](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#)\]
+Inhaltsverzeichnis:
 
-*   [1 Kommentare in PHP Definieren](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#kommentare-in-php-definieren)
-    
-*   [2 Mehrzeilige Kommentare](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#mehrzeilige-kommentare)
-    
-*   [3 Was und wie sollte man kommentieren?](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#was-und-wie-sollte-man-kommentieren)
-    
-<details>
-<summary>Inhaltsverzeichnis </summary>
 [1 Kommentare in PHP Definieren](#kommentare-in-php-definieren)
-[2 Mehrzeilige Kommentare](#mehrzeilige-kommentare) 
+[2 Mehrzeilige Kommentare](#mehrzeilige-kommentare)    
 [3 Was und wie sollte man kommentieren?](#was-und-wie-sollte-man-kommentieren)
-</details>
+    
+
 
 
 
