@@ -39,7 +39,7 @@ $name = "Cude Dev";
 ?>
 ```  
 
-Als Ausgabe erhalten wir:_Mein Name ist Cude Dev_
+Als Ausgabe erhalten wir: _Mein Name ist Cude Dev_
 
 Wir können den Inhalt von einer Variable natürlich auch wieder überschreiben, dazu weisen wir der Variable einfach den neuen Wert zu:
 ```php
@@ -52,7 +52,9 @@ echo "Dann ist mein Name $name";
 ?>
 ```   
 
-Die Ausgabe wäre dann:_Zuerst heiße ich Paul Meier__Dann ist mein Name Stefan Müller_
+Die Ausgabe wäre dann:
+_Zuerst heiße ich Paul Meier_ 
+_Dann ist mein Name Stefan Müller_
 
 Bisher wäre diese Funktion nur bei sehr langen Texten interessant, möchte man z.B. eine Person an 10 verschiedenen Stellen ansprechen.
 
@@ -61,7 +63,7 @@ Wenn wir jedoch mit _echo_ nur eine Variable abrufen (keinen weiteren Text), d
 Der Code:
 ```php
 <?php
-$name = "Nils Reimers";
+$name = "Cude Dev";
 echo $name;
 ?>
 ```    
@@ -69,8 +71,8 @@ echo $name;
 Man kann auch an eine bereits vorhandene Variable eine weitere Variable, oder einen Text anhängen.
 ```php
 <?php
-$name = "Nils ";
-$name .= "Reimers";
+$name = "Cude ";
+$name .= "Dev";
 echo $name;
 ?>
 ```   
@@ -82,12 +84,12 @@ Soll eine Variable oder ein Text an eine bereits bestehende Variable "angehängt
 Dies können wir auch direkt in dem echo benutzen:
 ```php
 <?php
-$name = "Nils";
-echo "Mein Name ist ".$name." Reimers";
+$name = "Cude";
+echo "Mein Name ist ".$name." Dev";
 ?>
 ```   
 
-Hier haben wir eine zusammengesetzte Ausgabe. Zuerst geben wir _Mein Name ist_ aus, nach den Anführungszeichen setzen wir einen Punkt und dann die Variable. Nach der Variable können wir entweder mit Semikolon die Ausgabe beenden, aber hier haben wir noch den _Text Reimers_ angehängt.
+Hier haben wir eine zusammengesetzte Ausgabe. Zuerst geben wir _Mein Name ist_ aus, nach den Anführungszeichen setzen wir einen Punkt und dann die Variable. Nach der Variable können wir entweder mit Semikolon die Ausgabe beenden, aber hier haben wir noch den _Text Dev_ angehängt.
 
 Dies geht selbstverständlich auch mit Variablen:
 ```php
@@ -103,9 +105,14 @@ Diese Methode wird später noch des öfteren benutzt.
 Variablentypen
 --------------
 
-In Variablen können unterschiedlichste Werte definiert werden. In diesem Artikel wurden Texte (auch Strings genannt) gespeichert, im nächsten Artikel werden [Zahlen](https://www.php-einfach.de/php-tutorial/rechnen-mit-variablen/) (auch Integer genannt) in Variablen abgespeichert. PHP an sich ist eine typlose Programmiersprache, d.h. PHP ermittelt selbst welchen Typ (Text, Zahl usw.) der Wert hat und legt diesen entsprechend für die Variable fest. Ihr als Programmierer müsst euch darum nicht kümmern.
+In Variablen können unterschiedlichste Werte definiert werden. In diesem Artikel wurden Texte (auch Strings genannt) gespeichert, im nächsten Artikel werden [Zahlen](https://loquacious-mandazi-92bae5.netlify.app/rechnen-mit-variablen/) (auch Integer genannt) in Variablen abgespeichert. PHP an sich ist eine typlose Programmiersprache, d.h. PHP ermittelt selbst welchen Typ (Text, Zahl usw.) der Wert hat und legt diesen entsprechend für die Variable fest. Ihr als Programmierer müsst euch darum nicht kümmern.
 
-Dennoch solltet ihr wissen, welche Grundtypen von Werten / Variablen existieren:**Integer:** Eine Integer-Variable enthält nur Ganzzahlen, d.h. Zahlen **ohne** Komma.**String:** Dies ist eine Variable, die einen Text/Satz/Wort enthält.**Float:** Eine Fließkommazahl, d.h. eine Zahl mit Komma. Man verwendet aber die englische Schreibweise und somit einen Punkt statt dem deutschen Komma.**Double:** In PHP das gleiche wie _float_.**bool:** Dies sind die Werte true und false
+Dennoch solltet ihr wissen, welche Grundtypen von Werten / Variablen existieren:
+**Integer:** Eine Integer-Variable enthält nur Ganzzahlen, d.h. Zahlen **ohne** Komma.
+**String:** Dies ist eine Variable, die einen Text/Satz/Wort enthält.
+**Float:** Eine Fließkommazahl, d.h. eine Zahl mit Komma. Man verwendet aber die englische Schreibweise und somit einen Punkt statt dem deutschen Komma.
+**Double:** In PHP das gleiche wie _float_.
+**bool:** Dies sind die Werte true und false
 
 Zum Beispiel:
 ```php
