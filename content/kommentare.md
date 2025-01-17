@@ -13,12 +13,21 @@ Kommentare in PHP werden nicht vom PHP Interpreter ausgeführt, sondern werden s
 
 Inhaltsverzeichnis \[[Verbergen](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#)\]
 
-*   [1 Kommentare in PHP Definieren](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#Kommentare_in_PHP_Definieren)
+*   [1 Kommentare in PHP Definieren](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#kommentare-in-php-definieren)
     
-*   [2 Mehrzeilige Kommentare](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#Mehrzeilige_Kommentare)
+*   [2 Mehrzeilige Kommentare](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#mehrzeilige-kommentare)
     
-*   [3 Was und wie sollte man kommentieren?](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#Was_und_wie_sollte_man_kommentieren)
+*   [3 Was und wie sollte man kommentieren?](https://loquacious-mandazi-92bae5.netlify.app/kommentare/#was-und-wie-sollte-man-kommentieren)
     
+<details>
+<summary>Inhaltsverzeichnis </summary>
+[1 Kommentare in PHP Definieren](#kommentare-in-php-definieren)
+[2 Mehrzeilige Kommentare](#mehrzeilige-kommentare) 
+[3 Was und wie sollte man kommentieren?](#was-und-wie-sollte-man-kommentieren)
+</details>
+
+
+
 
 Kommentare in PHP Definieren
 ----------------------------
