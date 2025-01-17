@@ -2,9 +2,15 @@
 <div class="list">
     {{ range .Paginator.Pages }}
     <div class="listItem">
-        <div class="listImageContainer">
+        {{ $imagePath := "{{ .Params.image }}" }}
+{{ if (fileExists $imagePath) }}
+
+                <div class="listImageContainer">
             <img src="{{ .Params.image }}" alt="{{ .Title }}" class="listImage" loading="lazy" />
         </div>
+{{ end }}
+        
+
 
         <div class="listItemTexts">
             <h1 class="lisItemTitle">
