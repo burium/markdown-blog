@@ -2,7 +2,7 @@
 title = "Erste Schritte"
 date = 2025-01-16
 draft = false
-description = "A step-by-step guide to check if PHP is installed on a server, including creating a phpinfo.php file."
+description = "Eine Schritt-für-Schritt-Anleitung, um zu überprüfen, ob PHP auf einem Server installiert ist, einschließlich der Erstellung einer phpinfo.php-Datei."
 image = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 imageBig = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 categories = ["PHP", "Web Development"]
@@ -27,7 +27,7 @@ Ruft man diese Seite jetzt auf ([http://localhost/phpinfo.php](http://localhost/
 In einer PHP-Datei können sowohl HTML-Befehle als auch PHP-Befehle enthalten sein. Die HTML-Befehle schreibt ihr wie gewohnt in die .php-Datei, so wie ihr es aus HTML-Dateien kennt.
 
 Möchte man in die Datei  PHP-Befehle einbinden, so muss zuerst eine Script-Umgebung gestartet. Dies geht mittels _Danach kommt euer PHP-Code. Diese Script-Umgebung wird beendet mittels _?>.__
-```html
+```php
 <!DOCTYPE html>
 <html> 
 <head>
