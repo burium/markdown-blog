@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /drafts/
+Allow: /
+Sitemap: https://loquacious-mandazi-92bae5.netlify.app/sitemap.xml
