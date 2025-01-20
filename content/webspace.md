@@ -5,7 +5,7 @@ draft = false
 description = "A guide to finding reliable PHP-enabled web hosting for your website."
 image = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 imageBig = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
-categories = ["Web Hosting", "PHP", "Development"]
+categories = ["PHP"]
 authors = ["Your Name"]
 avatar = "/images/avatar.webp"
 +++
