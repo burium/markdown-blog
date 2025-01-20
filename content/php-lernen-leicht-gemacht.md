@@ -5,7 +5,7 @@ draft = false
 description = "PHP ist die weit verbreitetste Programmiersprache für die Entwicklung dynamischer Webanwendungen. Viele bekannte Websites, unter Anderem Facebook und Wikipedia, verwenden PHP. Auf unserer Seite erhaltet ihr eine Schritt-für-Schritt Einführung in PHP und das Datenbanksystem MySQL."
 image = "/images/istockphoto-1297752994-612x612.webp"
 imageBig = "/images/istockphoto-1297752994-612x612.webp"
-categories = ["php", "mysql"]
+categories = ["php"]
 authors = ["cude"]
 avatar = "/images/avatar.webp"
 +++
