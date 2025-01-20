@@ -856,6 +856,18 @@ body.light .sideBarAuthor {
 .copyLink:hover {
   background-color: #343c4e;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
 
 /* SHARE LIGHT */
 
@@ -905,20 +917,10 @@ body.light .joinText {
   background-color: #f5f5f5;
   color: #555;
 }
-
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 18px;
-  text-align: left;
+body.light table {
+  color: var(--mainDark);
 }
 
-th, td {
-  padding: 12px;
-  border: 1px solid #ddd;
-}
 
 /* MEDIA QUERY */
 
