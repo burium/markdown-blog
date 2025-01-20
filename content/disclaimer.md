@@ -1,10 +1,14 @@
 +++
 title: "Disclaimer"
-date: 2025-01-20
-draft: false
+date = 2025-01-16
+draft = false
 description: "Disclaimer for the website"
 slug: "disclaimer"
 +++
+
+
+
+
 {{ $domain := replaceRE "^https?://(www\.)?" .Site.BaseURL "" }}
 
 If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at [contact@{{ $domain }}](mailto:contact@{{ $domain }}).
