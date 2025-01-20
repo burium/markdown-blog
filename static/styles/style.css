@@ -55,6 +55,33 @@ body {
 }
 
 /* SINGLE ELEMENTS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+
 a {
   color: var(--mainLight);
   text-decoration: none;
@@ -1138,3 +1165,5 @@ body.light .joinText {
     font-size: 1.4rem;
   }
 }
+
+
