@@ -1170,27 +1170,24 @@ body.light table {
   }
 }
 
-nav#TableOfContents {
-    border: 1px solid #ddd;
-    background: #ddd;
-    margin-bottom: 20px;
+.toc {
+  font-size: 14px;
+  margin-bottom: 20px;
 }
- 
-nav#TableOfContents ul{
-    background: white;
-    padding-inline-start: 0px !important;
+
+.toc ul {
+  padding-left: 20px;
 }
- 
-nav#TableOfContents:before {
-    content: "Tabla de Contenidos";
-    width: 100%;
-    background: #ddd;
-    display: block;
-    padding: 20px;
+
+.toc li {
+  list-style-type: none;
 }
- 
-nav#TableOfContents ul li {
-    list-style: none;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+
+.toc a {
+  color: #333;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  text-decoration: underline;
 }
