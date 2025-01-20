@@ -13,14 +13,15 @@ avatar = "/images/avatar.webp"
 Test Content
 
 
-{{< highlight go "linenos=inline, hl_Lines=3 6-8, style=emacs" >}}
+{{< highlight go "linenos=inline, hl_Lines=3 6-8, style=monokai" >}}
 package main
 
 import "fmt"
 
 func main() {
-    for i := 0; i < 3; i++ {
+    for i := 0; i < 3; i++ {  // Line 3 (highlighted)
         fmt.Println("Value of i:", i)
-    }
+    }                           // Line 6-8 (highlighted)
 }
 {{< /highlight >}}
+
