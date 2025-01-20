@@ -13,3 +13,4 @@ paginate = 8
   category = "categories"
   author = "authors"
  
+{{ $domain := replaceRE "^https?:\/\/(www\.)?" .Site.BaseURL "$1" }}
