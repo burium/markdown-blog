@@ -5,7 +5,7 @@ draft = false
 description = "Eine Schritt-für-Schritt-Anleitung zur Installation von PHP mit XAMPP, inklusive Tipps zur Nutzung und Fehlerbehebung."  
 image = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"  
 imageBig = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"  
-categories = ["PHP", "Webentwicklung"]  
+categories = ["PHP"]  
 authors = ["Cude"]  
 avatar = "/images/avatar.webp"  
 +++  
