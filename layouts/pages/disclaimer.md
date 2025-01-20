@@ -1,11 +1,4 @@
-+++
-title = "Disclaimer"
-date = 2025-01-16
-draft = false
-description = ""
-authors = ["Cude"]
-avatar = "/images/avatar.webp"
-+++
+{{ define "main" }}
 {{ $domain := replaceRE "^https?:\/\/(www\.)?" .Site.BaseURL "$1" }}
 If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at contact@{{ $domain }}.
 
@@ -21,3 +14,4 @@ By using our website, you hereby consent to our disclaimer and agree to its term
 
 ## Update  
 Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+{{ end }}
