@@ -12,12 +12,18 @@
       <div class="list">
         {{ range .Paginator.Pages }}
           <div class="listItem">
+
+
+                    {{ $imagePath := .Params.image }} {{ if and $imagePath (fileExists (printf "static/%s" $imagePath)) }}
             <img
               src="{{ .Params.image }}"
               alt="{{ .Title }}"
               class="listItemImage"
               loading="lazy"
             />
+        {{ end }}
+
+            
             <div class="listItemTexts">
               <h1 class="listItemTitle">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
