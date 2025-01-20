@@ -10,7 +10,6 @@ authors = ["Your Name"]
 avatar = "/images/avatar.webp"
 +++
 
-{{% toc %}}
 
 ## **Hilfsverben (sein, haben, werden)**  
 Hilfsverben sind essenziell, um zusammengesetzte Zeiten zu bilden. Hier sind ihre Konjugationen im Präsens:
