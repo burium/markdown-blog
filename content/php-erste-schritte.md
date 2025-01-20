@@ -14,7 +14,7 @@ avatar = "/images/avatar.webp"
 
 
 Um zu sehen, ob auf einem Server überhaupt PHP installiert ist, benötigt man eine PHP-Datei (z.B. `phpinfo.php`) mit folgendem Inhalt:
-{{< highlight php5 "linenos=inline, hl_Lines=3 6-8, style=monokai" >}}
+{{< highlight phtml "linenos=inline, hl_Lines=3 6-8, style=monokai" >}}
 <?php
 phpinfo();
 ?>
@@ -31,26 +31,26 @@ In einer PHP-Datei können sowohl HTML-Befehle als auch PHP-Befehle enthalten se
 Möchte man in die Datei  PHP-Befehle einbinden, so muss zuerst eine Script-Umgebung gestartet. Dies geht mittels _Danach kommt euer PHP-Code. Diese Script-Umgebung wird beendet mittels_ ?>.
 {{< highlight phtml "linenos=inline, hl_Lines=3 6-8, style=monokai" >}}
 <!DOCTYPE html>
-<html> 
-<head>
-	<meta charset="UTF-8" />
-	<title>Eure erster PHP-Script</title> 
-</head>
- 
-<body>
-<h1>Herzlich Willkommen</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Eure erster PHP-Script</title>
+    </head>
 
-<p>Dies ist eure erste PHP-Datei. Eine Scriptumgebung könnt ihr wie folgt starten: 
-<?php
-echo "Mittels echo können Daten ausgegeben werden";
-?></p>
+    <body>
+        <h1>Herzlich Willkommen</h1>
 
-<p>Später könnt ihr in PHP dynamische Inhalte erzeugen. Ein einfaches Beispiel ist das aktuelle Datum auszugeben: 
-<?php
-echo date("d.m.Y H:i:s");
-?></p>
- 
-</body>
+        <p>
+            Dies ist eure erste PHP-Datei. Eine Scriptumgebung könnt ihr wie folgt starten:
+            <?php echo "Mittels echo können Daten ausgegeben werden"; ?>
+        </p>
+
+        <p>
+            Später könnt ihr in PHP dynamische Inhalte erzeugen. Ein einfaches Beispiel ist das aktuelle Datum auszugeben:
+            <?php echo date("d.m.Y H:i:s"); ?>
+        </p>
+    </body>
 </html>
 {{< /highlight >}}
 Im obigen Script habt ihr ein gewöhnliches HTML5-Grundgerüst. Zwischen den HTML-Befehlen finden sich immer wieder PHP-Abschnitte. Der erste Abschnitt gibt nur einen Text aus. Der zweite Abschnitt gibt das aktuelle Datum und die aktuelle Uhrzeit aus.
