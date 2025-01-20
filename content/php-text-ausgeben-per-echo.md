@@ -1,11 +1,11 @@
 +++
-title = "Text ausgeben per echo"
+title = "PHP Text ausgeben per echo"
 date = 2025-01-16
 draft = false
 description = "Einführung in die Ausgabe von Text mit echo in PHP."
 image = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 imageBig = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
-categories = ["PHP", "Web Development"]
+categories = ["PHP"]
 authors = ["Cude"]
 avatar = "/images/avatar.webp"
 +++
