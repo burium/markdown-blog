@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ .Page.TableOfContents }}
 <div class="singleHead">
     <div class="singleHeadContainer">
         <div class="singleHeadText">
@@ -37,7 +36,7 @@
 <div class="contentContainer">
     <div class="contentSide"></div>
     <div class="content">
-        {{ .Content }}
+        {{ .Page.TableOfContents }} {{ .Content }}
     </div>
 
     <div class="right">
