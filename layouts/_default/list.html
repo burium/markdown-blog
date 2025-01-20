@@ -23,11 +23,18 @@
                 </span>
                 <time class="date">{{ dateFormat .Site.Params.dateFormat .Date }}</time>
             </div>
-            <div class="tags">
-                {{ range (.GetTerms "categories") }}
-                <a class="listItemCategory" href="{{ .Permalink }}">{{ .Name }}</a>
-                {{ end }}
-            </div>
+ 
+
+
+                <div class="tags">
+                    {{ range (.GetTerms "categories") }}
+                    <div class="tag {{ .Name }}">
+                        <a href="{{ .Permalink }}" class="singleCategory">{{ .Name }}</a>
+                    </div>
+                    {{ end }}
+                </div>
+
+            
         </div>
     </div>
     {{ end }} {{ template "_internal/pagination.html" . }}
