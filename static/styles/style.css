@@ -862,6 +862,12 @@ table {
   margin: 20px 0;
   font-size: 18px;
   text-align: left;
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
+  
 }
 
 th, td {
