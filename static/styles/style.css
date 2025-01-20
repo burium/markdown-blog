@@ -1170,4 +1170,27 @@ body.light table {
   }
 }
 
-
+nav#TableOfContents {
+    border: 1px solid #ddd;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+ 
+nav#TableOfContents ul{
+    background: white;
+    padding-inline-start: 0px !important;
+}
+ 
+nav#TableOfContents:before {
+    content: "Tabla de Contenidos";
+    width: 100%;
+    background: #ddd;
+    display: block;
+    padding: 20px;
+}
+ 
+nav#TableOfContents ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
