@@ -1,93 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <meta name="generator" content="Hugo 0.118.2" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98K1CTKGXH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-98K1CTKGXH");
+        </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6917511485346336" crossorigin="anonymous"></script>
 
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="google-adsense-account" content="ca-pub-6917511485346336" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="{{ or .Params.description .Site.Params.description }}" />
-        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+        <meta name="description" content="{{or" .Params.description .Site.Params.description}} />
         <link rel="stylesheet" href="/styles/style.css" />
         <link rel="icon" href="/images/favicon.png" />
-        <link rel="canonical" href="{{ .Permalink }}" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{ .Title }}" />
-        <meta property="og:description" content="{{ or .Params.description .Site.Params.description }}" />
-        <meta property="og:url" content="{{ .Permalink }}" />
-        <meta property="og:image" content="{{ .Params.ogImage }}" />
-        <meta property="og:image:secure_url" content="{{ .Params.ogImage }}" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="{{ .Title }}" />
-        <meta name="twitter:description" content="{{ or .Params.description .Site.Params.description }}" />
-        <meta name="twitter:image" content="{{ .Params.ogImage }}" />
-        <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content="{{ .Params.author }}" />
-        <meta name="twitter:label2" content="Time to read" />
-        <meta name="twitter:data2" content="{{ .Params.readingTime }}" />
         <title>{{ .Title }}</title>
+    </head>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6917511485346336"
-     crossorigin="anonymous"></script>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-98K1CTKGXH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <body>
+        <div class="container">
+            {{ partial "navbar" . }} {{ block "main" . }} {{ end }} {{ partial "footer" . }}
+        </div>
+        <div id="search" class="search">
+            <div class="searchContainer">
+                <div class="searchInputContainer">
+                    <input type="text" class="searchInput" id="searchInput" autofocus placeholder="Type to search..." />
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="searchCloseSvg">
+                        <g opacity="0.4">
+                            <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+                <span class="searchCountNumber"></span>
+                <div class="searchResult"></div>
+            </div>
+        </div>
 
-  gtag('config', 'G-98K1CTKGXH');
-</script>
-</head>
-<body>
-  <div class="container">
-    {{ partial "navbar" . }}
-    {{ block "main" . }} {{ end }}
-    {{ partial "footer" . }}
-     </div>
-    <div id="search" class="search">
-  <div class="searchContainer">
-    <div class="searchInputContainer">
-      <input
-        type="text"
-        class="searchInput"
-        id="searchInput"
-        autofocus
-        placeholder="Type to search..."
-      />
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="searchCloseSvg"
-      >
-        <g opacity="0.4">
-          <path
-            d="M9.16992 14.8299L14.8299 9.16992"
-            stroke="#999"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M14.8299 14.8299L9.16992 9.16992"
-            stroke="#999"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </g>
-      </svg>
-    </div>
-    <span class="searchCountNumber"></span>
-    <div class="searchResult"></div>
-  </div>
-</div>
-  </div>
-  <script src="/js/app.js"></script>  <script src="/js/search.js"></script>
-</body>
+        <script src="/js/app.js"></script>
+        <script src="/js/search.js"></script>
+    </body>
 </html>
