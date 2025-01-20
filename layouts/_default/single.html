@@ -30,7 +30,13 @@
 
         <!-- Fallback for missing imageBig -->
         <div class="singleImageContainer">
-            <img src="{{ .Params.imageBig | default "/images/default-image.jpg" }}" alt="{{ .Title }}" class="singleImage" />
+
+                    {{ $imagePath := .Params.image }} {{ if and $imagePath (fileExists (printf "static/%s" $imagePath)) }}
+                <img src="{{ .Params.imageBig | default "/images/default-image.jpg" }}" alt="{{ .Title }}" class="singleImage" />
+        {{ end }}
+
+            
+     
         </div>
     </div>
 </div>
