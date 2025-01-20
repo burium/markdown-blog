@@ -6,7 +6,7 @@ description = ""
 authors = ["Cude"]
 avatar = "/images/avatar.webp"
 +++
-
+{{ $domain := replaceRE "^https?:\/\/(www\.)?" .Site.BaseURL "$1" }}
 Disclaimer  
 If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at contact@{{ $domain }}.
 
