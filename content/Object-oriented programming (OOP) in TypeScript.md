@@ -2,22 +2,25 @@
 title = "Object-oriented programming (OOP) in TypeScript"
 date = 2025-01-16
 draft = false
-description = "Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects," which encapsulate data and behavior. These objects contain data in the form of fields (also known as attributes or properties) and code in the form of procedures (known as methods). OOP is built on six key pillars that form the foundation of its principles:
+description = """
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects," which encapsulate data and behavior. These objects contain data in the form of fields (also known as attributes or properties) and code in the form of procedures (known as methods). OOP is built on six key principles that form the foundation of its concepts:
 
-Encapsulation
-Abstraction
-Inheritance
-Polymorphism
-Composition
-Association
-These principles help in organizing and structuring code efficiently, making it more reusable, maintainable, and scalable."
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism
+- Composition
+- Association
 
+These principles help in organizing and structuring code efficiently, making it more reusable, maintainable, and scalable.
+"""
 image = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 imageBig = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 categories = ["OOP", "Dev"]
 authors = ["Cude"]
 avatar = "/images/avatar.webp"
 +++
+
 
 # Object Oriented Programming Expert with TypeScript
 
