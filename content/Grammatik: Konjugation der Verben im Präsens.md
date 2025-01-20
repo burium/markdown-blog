@@ -9,6 +9,7 @@ categories = ["German Grammar", "Language Learning"]
 authors = ["Your Name"]
 avatar = "/images/avatar.webp"
 +++
+
 {{< toc >}}
 
 ## **Hilfsverben (sein, haben, werden)**  
