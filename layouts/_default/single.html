@@ -6,8 +6,10 @@
             <p class="singleDescription">{{ .Params.description | default "No description available." }}</p>
             <div class="details">
                 <!-- Fallback for missing avatar -->
-                <img src="{{ .Params.avatar | default "/images/default-avatar.jpg" }}" loading="lazy" alt="Author Avatar" class="avatar" />
-
+ 
+        {{ $imagePath := .Params.image }} {{ if and $imagePath (fileExists (printf "static/%s" $imagePath)) }}
+               <img src="{{ .Params.avatar | default "/images/default-avatar.jpg" }}" loading="lazy" alt="Author Avatar" class="avatar" />
+        {{ end }}
                 <div class="detailText">
                     <span>
                         {{ range (.GetTerms "authors") }}
