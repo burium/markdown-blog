@@ -1,9 +1,9 @@
 +++
-title: "Disclaimer"
+titl= "Disclaimer"
 date = 2025-01-16
 draft = false
-description: "Disclaimer for the website"
-slug: "disclaimer"
+description= "Disclaimer for the website"
+slug= "disclaimer"
 +++
 
 
