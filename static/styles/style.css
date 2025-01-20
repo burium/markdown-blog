@@ -57,6 +57,7 @@ body {
 /* SINGLE ELEMENTS */
 table {
   width: 100%;
+  color: var(--mainLight);
   border-collapse: collapse;
   margin: 20px 0;
   font-size: 18px;
@@ -68,18 +69,10 @@ th, td {
   border: 1px solid #ddd;
 }
 
-th {
-  background-color: #f4f4f4;
-}
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
 
-tr:hover {
-  background-color: #f1f1f1;
-  transition: background-color 0.3s ease;
-}
+
+
 
 
 a {
