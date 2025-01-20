@@ -5,7 +5,7 @@ draft = false
 description = "Eine Schritt-für-Schritt-Anleitung zur Installation von XAMPP und zum Ausführen von PHP-Skripten auf dem eigenen Rechner."
 image = "/images/php.jpg"
 imageBig = "/images/php.jpg"
-categories = ["PHP", "Webentwicklung", "XAMPP"]
+categories = ["PHP"]
 authors = ["Cude Admin"]
 avatar = "/images/avatar.webp"
 +++
