@@ -1,70 +1,48 @@
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="google-adsense-account" content="ca-pub-6917511485346336">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content={{or .Params.description .Site.Params.description}}>
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="icon" href="/images/favicon.png" />
-  <title>{{ .Title }}</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6917511485346336"
-     crossorigin="anonymous"></script>
-  <meta name="google-adsense-account" content="ca-pub-6917511485346336">
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-98K1CTKGXH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-98K1CTKGXH');
-</script>
-</head>
-<body>
-  <div class="container">
-    {{ partial "navbar" . }}
-    {{ block "main" . }} {{ end }}
-    {{ partial "footer" . }}
-     </div>
-    <div id="search" class="search">
-  <div class="searchContainer">
-    <div class="searchInputContainer">
-      <input
-        type="text"
-        class="searchInput"
-        id="searchInput"
-        autofocus
-        placeholder="Type to search..."
-      />
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="searchCloseSvg"
-      >
-        <g opacity="0.4">
-          <path
-            d="M9.16992 14.8299L14.8299 9.16992"
-            stroke="#999"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M14.8299 14.8299L9.16992 9.16992"
-            stroke="#999"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </g>
-      </svg>
-    </div>
-    <span class="searchCountNumber"></span>
-    <div class="searchResult"></div>
-  </div>
-</div>
-  </div>
-  <script src="/js/app.js"></script>  <script src="/js/search.js"></script>
-</body>
+<html>
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6917511485346336" crossorigin="anonymous"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98K1CTKGXH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-98K1CTKGXH");
+        </script>
+      
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="google-adsense-account" content="ca-pub-6917511485346336" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="{{ or .Params.description .Site.Params.description }}" />
+        <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="icon" href="/images/favicon.png" />
+        <title>{{ .Title }}</title>
+
+    </head>
+    <body>
+        <div class="container">
+            {{ partial "navbar" . }} {{ block "main" . }} {{ end }} {{ partial "footer" . }}
+        </div>
+        <div id="search" class="search">
+            <div class="searchContainer">
+                <div class="searchInputContainer">
+                    <input type="text" class="searchInput" id="searchInput" autofocus placeholder="Type to search..." />
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="searchCloseSvg">
+                        <g opacity="0.4">
+                            <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+                <span class="searchCountNumber"></span>
+                <div class="searchResult"></div>
+            </div>
+        </div>
+        <script src="/js/app.js"></script>
+        <script src="/js/search.js"></script>
+    </body>
 </html>
