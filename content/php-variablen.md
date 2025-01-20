@@ -5,7 +5,7 @@ draft = false
 description = "Einführung in Variablen in PHP, ihre Verwendung, Berechnungen und die Übergabe zwischen PHP-Seiten."
 image = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
 imageBig = "https://r72.cooltext.com/rendered/cooltext473991758467426.png"
-categories = ["PHP", "Web Development"]
+categories = ["PHP"]
 authors = ["Cude"]
 avatar = "/images/avatar.webp"
 +++
