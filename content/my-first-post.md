@@ -11,3 +11,16 @@ avatar = "/images/avatar.webp"
 +++
 
 Test Content
+
+
+{{< highlight go "linenos=inline, hl_Lines=3 6-8, style=emacs" >}}
+package main
+
+import "fmt"
+
+func main() {
+    for i := 0; i < 3; i++ {
+        fmt.Println("Value of i:", i)
+    }
+}
+{{< /highlight >}}
