@@ -1,15 +1,52 @@
 {{ define "main" }}
-     <div class="tagsPage">
-  {{ if eq .RelPermalink "/categories/"}} 
-    {{ range $.Site.Taxonomies.categories.ByCount }}
- 
+  <div class="tagsPage">
+    {{ if eq .RelPermalink "/categories/" }}
+      {{ range $.Site.Taxonomies.categories.ByCount }}
         <a class="tagsPageLink" href="/categories/{{ .Name }}">
           <div class="tagsPageItem react">
             # {{ .Name }} <small>({{ .Count }})</small>
           </div>
         </a>
-
+      {{ end }}
+    {{ else }}
+      <div class="list">
+        {{ range .Paginator.Pages }}
+          <div class="listItem">
+            <img
+              src="{{ .Params.image }}"
+              alt="{{ .Title }}"
+              class="listItemImage"
+              loading="lazy"
+            />
+            <div class="listItemTexts">
+              <h1 class="listItemTitle">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h1>
+              <p class="listItemDesc">{{ .Params.description }}</p>
+              <div class="listItemDetail">
+                <img
+                  src="{{ .Params.avatar }}"
+                  loading="lazy"
+                  alt=""
+                  class="listItemAvatar"
+                />
+                <span>
+                  {{ range (.GetTerms "authors") }}
+                    <a href="{{ .Permalink }}">{{ .Name }}</a>
+                  {{ end }}
+                </span>
+                <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+              </div>
+              <div class="listItemCategories">
+                {{ range (.GetTerms "categories") }}
+                  <a class="listItemCategory" href="{{ .Permalink }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+        {{ template "_internal/pagination.html" . }}
+      </div>
     {{ end }}
-  {{ end }}
-             </div>
+  </div>
 {{ end }}
