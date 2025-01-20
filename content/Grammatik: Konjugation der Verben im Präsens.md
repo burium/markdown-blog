@@ -9,7 +9,7 @@ categories = ["German Grammar", "Language Learning"]
 authors = ["Your Name"]
 avatar = "/images/avatar.webp"
 +++
-# Grammatik: Konjugation der Verben im Präsens
+{{< toc >}}
 
 ## **Hilfsverben (sein, haben, werden)**  
 Hilfsverben sind essenziell, um zusammengesetzte Zeiten zu bilden. Hier sind ihre Konjugationen im Präsens:
