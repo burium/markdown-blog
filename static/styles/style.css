@@ -411,6 +411,15 @@ body.light .search {
   background-color: rgba(0, 0, 0, 0.22);
   border: 0.5px solid gray;
 }
+.tag.php {
+  background-color: rgba(88, 130, 255, 0.22); /* Light blue for PHP */
+  border: 0.5px solid #5c5c5c; /* Darker border for PHP */
+}
+
+.tag.mysql {
+  background-color: rgba(0, 0, 0, 0.15); /* Lighter shade for MySQL */
+  border: 0.5px solid #00758F; /* MySQL blue for the border */
+}
 
 body.light .tag.nextjs {
   border: none;
