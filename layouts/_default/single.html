@@ -1,20 +1,20 @@
 {{ define "main" }}
-
+{{ .Page.TableOfContents }}
 <div class="singleHead">
     <div class="singleHeadContainer">
         <div class="singleHeadText">
-            <h1 class="singleTitle">{{.Title}}</h1>
-            <p class="singleDescription">{{.Params.description}}</p>
+            <h1 class="singleTitle">{{ .Title }}</h1>
+            <p class="singleDescription">{{ .Params.description | default "No description available." }}</p>
             <div class="details">
-                <img src="{{.Params.avatar}}" loading="lazy" alt="" class="avatar" />
+                <!-- Fallback for missing avatar -->
+                <img src="{{ .Params.avatar | default "/images/default-avatar.jpg" }}" loading="lazy" alt="Author Avatar" class="avatar" />
 
                 <div class="detailText">
                     <span>
                         {{ range (.GetTerms "authors") }}
-                        <a class="author" href="{{.Permalink}}">{{ .Name }}</a>
+                        <a class="author" href="{{ .Permalink }}">{{ .Name }}</a>
                         {{ end }}
                     </span>
-
                     <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
                 </div>
                 <div class="tags">
@@ -27,13 +27,12 @@
             </div>
         </div>
 
+        <!-- Fallback for missing imageBig -->
         <div class="singleImageContainer">
-            <img src="{{ .Params.imageBig }}" alt="{{.Title}}" class="singleImage" />
+            <img src="{{ .Params.imageBig | default "/images/default-image.jpg" }}" alt="{{ .Title }}" class="singleImage" />
         </div>
     </div>
 </div>
-
-{{/* non */}}
 
 <div class="contentContainer">
     <div class="contentSide"></div>
@@ -46,4 +45,3 @@
     </div>
 </div>
 {{ end }}
-
