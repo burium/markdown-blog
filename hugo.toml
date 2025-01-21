@@ -12,4 +12,7 @@ paginate = 8
 [taxonomies]
   category = "categories"
   author = "authors"
- 
+[[menu.main]]
+  name = "Disclaimer"
+  url = "/disclaimer/"
+  weight = 5
