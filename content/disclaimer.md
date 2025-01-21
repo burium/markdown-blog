@@ -2,7 +2,7 @@
 title= "Disclaimer"
 date = 2025-01-16
 draft= false
-unlisted= true
+type= "static"
 description= "Disclaimer for the website"
 slug= "disclaimer"
 +++
