@@ -1,0 +1,4 @@
+[[menu.main]]
+  name = "Disclaimer"
+  url = "/disclaimer/"
+  weight = 5
