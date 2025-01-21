@@ -1,43 +1,40 @@
 {{ define "main" }}
-{{ range where .Pages "Type" "!=" "static" }}
-<div class="list">
-    {{ range .Paginator.Pages }}
-    <div class="listItem">
-        {{ $imagePath := .Params.image }} {{ if and $imagePath (fileExists (printf "static/%s" $imagePath)) }}
-        <div class="listImageContainer">
+  <div class="list">
+    {{ range where .Pages "Type" "!=" "static" }}
+      <div class="listItem">
+        {{ $imagePath := .Params.image }} 
+        {{ if and $imagePath (fileExists (printf "static/%s" $imagePath)) }}
+          <div class="listImageContainer">
             <img src="{{ $imagePath }}" alt="{{ .Title }}" class="listImage" loading="lazy" />
-        </div>
+          </div>
         {{ end }}
 
         <div class="listItemTexts">
-            <h1 class="lisItemTitle">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h1>
-            <p class="lisItemDesc">{{ .Params.description }}</p>
-            <div class="listItemDetail">
-                <img src="{{ .Params.avatar }}" loading="lazy" alt="Author Avatar" class="listAvatar" />
-                <span class="author">
-                    {{ range (.GetTerms "authors") }}
-                    <a href="{{ .Permalink }}">{{ .Name }}</a>
-                    {{ end }}
-                </span>
-                <time class="date">{{ dateFormat .Site.Params.dateFormat .Date }}</time>
-            </div>
- 
+          <h1 class="lisItemTitle">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h1>
+          <p class="lisItemDesc">{{ .Params.description }}</p>
+          <div class="listItemDetail">
+            <img src="{{ .Params.avatar }}" loading="lazy" alt="Author Avatar" class="listAvatar" />
+            <span class="author">
+              {{ range (.GetTerms "authors") }}
+                <a href="{{ .Permalink }}">{{ .Name }}</a>
+              {{ end }}
+            </span>
+            <time class="date">{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+          </div>
 
-
-                <div class="tags">
-                    {{ range (.GetTerms "categories") }}
-                    <div class="tag {{ .Name }}">
-                        <a href="{{ .Permalink }}" class="singleCategory">{{ .Name }}</a>
-                    </div>
-                    {{ end }}
-                </div>
-
-            
+          <div class="tags">
+            {{ range (.GetTerms "categories") }}
+              <div class="tag {{ .Name }}">
+                <a href="{{ .Permalink }}" class="singleCategory">{{ .Name }}</a>
+              </div>
+            {{ end }}
+          </div>
         </div>
-    </div>
-    {{ end }} {{ template "_internal/pagination.html" . }}
-</div>
-{{ end }}
+      </div>
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+  </div>
 {{ end }}
