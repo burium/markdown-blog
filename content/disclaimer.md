@@ -6,11 +6,8 @@ type= "static"
 description= "Disclaimer for the website"
 slug= "disclaimer"
 +++
-
-
-
-
-{{ $domain := .Site.BaseURL | trimPrefix "https://" | trimPrefix "http://" | trimPrefix "www." }}
+{{ $domain := .Site.BaseURL | trimPrefix "https://" | trimPrefix "http://" }}
+{{ $domain := $domain | trimPrefix "www." }}
 
 If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at [contact@{{ $domain }}](mailto:contact@{{ $domain }}).
 
@@ -26,5 +23,3 @@ By using our website, you hereby consent to our disclaimer and agree to its term
 
 ## Update
 Should we update, amend or make any changes to this document, those changes will be prominently posted here.
-
-
