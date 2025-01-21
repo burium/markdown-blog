@@ -13,8 +13,3 @@ paginate = 8
   category = "categories"
   author = "authors"
  
-[[menu.main]]
-  name = "Disclaimer"
-  url = "/disclaimer/"
-  weight = 5
-
