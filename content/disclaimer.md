@@ -1,7 +1,7 @@
 +++
 title= "Disclaimer"
 date = 2025-01-16
-draft: false
+draft= false
 description= "Disclaimer for the website"
 slug= "disclaimer"
 +++
