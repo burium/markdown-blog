@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+{{ range where .Pages "Type" "!=" "static" }}
 <div class="list">
     {{ range .Paginator.Pages }}
     <div class="listItem">
@@ -39,4 +39,5 @@
     </div>
     {{ end }} {{ template "_internal/pagination.html" . }}
 </div>
+{{ end }}
 {{ end }}
