@@ -8,6 +8,7 @@ paginate = 8
 [params]
   description = "The CUDE fastest blog"
   dateFormat = "Jan 2, 2006"
+  sitemap = true
 
 [taxonomies]
   category = "categories"
@@ -21,3 +22,5 @@ paginate = 8
   changefreq = "daily"
   priority = 0.5
   filename = "sitemap.xml"
+
+  
