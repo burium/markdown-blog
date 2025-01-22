@@ -4,3 +4,4 @@
 
 [build.environment]
   HUGO_VERSION = "0.111.3"  # You can specify the version you want here
+  HUGO_BASEURL = "/"
