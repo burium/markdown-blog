@@ -1,8 +1,6 @@
-baseURL = 'https://cudu.netlify.app/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'CUDE'
-
-
 paginate = 8
 
 [params]
